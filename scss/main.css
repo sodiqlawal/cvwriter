@@ -1,0 +1,601 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.containerfluid {
+  width: 100%;
+}
+
+.containerfluid .banner {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/sayo.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/sayo.jpg) center/cover no-repeat;
+  color: white;
+  height: 600px;
+}
+
+.containerfluid .banner .bannercontent {
+  width: 50%;
+  margin-left: 10rem;
+  padding-top: 8rem;
+}
+
+.containerfluid .banner .bannercontent .bannertitle {
+  letter-spacing: .1rem;
+  font-size: 3rem;
+}
+
+.containerfluid .banner .bannercontent .bannertext {
+  line-height: 1.5rem;
+}
+
+.containerfluid .banner .bannercontent .downarrow {
+  font-size: 3rem;
+  position: absolute;
+  left: 50%;
+  margin-right: 5rem;
+  margin-top: 8rem;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: .5rem;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.containerfluid .banner .bannercontent .downarrow:hover {
+  background: silver;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.containerfluid .codegridnavcontainer {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/nine.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/nine.jpg) center/cover no-repeat;
+  width: 100%;
+}
+
+.containerfluid .codegridnavcontainer .wrapper {
+  height: 100vh;
+}
+
+.containerfluid .codegridnavcontainer .logo {
+  line-height: 40px;
+  float: left;
+  margin: 1.2em 0 0 2.2em;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.containerfluid .codegridnavcontainer .nav {
+  line-height: 40px;
+  margin: 1.2em;
+  position: absolute;
+  right: 0;
+}
+
+.containerfluid .codegridnavcontainer .nav ul li {
+  list-style: none;
+  display: inline-block;
+  color: #fff;
+  padding-right: 36px;
+}
+
+.containerfluid .codegridnavcontainer .nav ul li a {
+  text-decoration: none;
+}
+
+.containerfluid .codegridnavcontainer .social-media {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.containerfluid .codegridnavcontainer .social-media ul li {
+  list-style: none;
+  color: #fff;
+  padding-top: 20px;
+}
+
+.containerfluid .codegridnavcontainer .side-strip {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -4em;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  color: #fff;
+  letter-spacing: 4px;
+}
+
+.containerfluid .codegridnavcontainer .header {
+  position: absolute;
+  top: 38%;
+  left: 46%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.containerfluid .codegridnavcontainer .header h1 {
+  color: #fff;
+  font-weight: bolder;
+}
+
+.containerfluid .codegridnavcontainer .header p {
+  color: #fff;
+  font-weight: lighter;
+}
+
+.containerfluid .codegridnavcontainer .header button {
+  margin-top: 12px;
+  border: none;
+  padding: 16px 40px;
+  background: #fff;
+  color: #000;
+  letter-spacing: 4px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.containerfluid .codegridnavcontainer .bottom-bar {
+  color: #fff;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+}
+
+.containerfluid .codegridnavcontainer .bottom-bar .row {
+  padding: 4em 2.6em 2em 2.6em;
+  background: rgba(0, 0, 0, 0.9);
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  visibility: hidden;
+}
+
+.containerfluid .codegridnavcontainer .bottom-bar .row h6 {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.containerfluid .codegridnavcontainer .bottom-bar .row p {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.containerfluid .codegridnavcontainer .overlay {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #f1f1f1;
+  top: 0%;
+}
+
+.containerfluid .codegridnavcontainer .overlay h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bolder;
+  letter-spacing: 12px;
+}
+
+.containerfluid #toggle {
+  position: absolute;
+  right: 20px;
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  float: right;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.containerfluid #toggle .span {
+  height: 3px;
+  background: #fff;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  margin: 5px auto;
+}
+
+.containerfluid #toggle.on .one {
+  -webkit-transform: rotate(45deg) translateX(2px) translateY(4px);
+          transform: rotate(45deg) translateX(2px) translateY(4px);
+}
+
+.containerfluid #toggle.on .two {
+  opacity: 0;
+}
+
+.containerfluid #toggle.on .three {
+  -webkit-transform: rotate(-45deg) translateX(8px) translateY(-10px);
+          transform: rotate(-45deg) translateX(8px) translateY(-10px);
+}
+
+.containerfluid #resize {
+  z-index: 1;
+  top: 0px;
+  position: absolute;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  display: table;
+}
+
+.containerfluid #resize li:nth-child(1) {
+  margin-top: 12px;
+}
+
+.containerfluid #resize #menu {
+  height: 50px;
+  display: table-cell;
+  vertical-align: center;
+}
+
+.containerfluid #resize #menu li {
+  display: block;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 50px;
+  min-height: 50px;
+  font-weight: 200;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.containerfluid #resize #menu li a {
+  color: #fff;
+}
+
+.containerfluid #resize.active {
+  visibility: visible !important;
+  opacity: 0.99 !important;
+}
+
+.containerfluid .brand {
+  width: 50%;
+  margin-left: auto;
+  margin: 4rem 4rem 4rem auto;
+}
+
+.containerfluid .brand .brandtitle {
+  font-family: 'sans-serif';
+  font-size: 3rem;
+  font-weight: 1000;
+  margin-bottom: .5rem;
+}
+
+.containerfluid .brand .brandtext {
+  line-height: 1.8rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.containerfluid .projectgridcontainer .projectgridtitle {
+  font-family: 'sans-serif';
+  font-size: 3rem;
+  font-weight: 1000;
+  margin-bottom: .5rem;
+  text-align: center;
+  margin-left: 12rem;
+}
+
+.containerfluid .projectgridcontainer .projectgridcontent {
+  color: white;
+}
+
+.containerfluid .projectgridcontainer .projectgridcontent .grid {
+  height: 400px;
+}
+
+.containerfluid .projectgridcontainer .projectgridcontent .one {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/one.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/one.jpg) center/cover no-repeat;
+}
+
+.containerfluid .projectgridcontainer .projectgridcontent .two {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/two.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/two.jpg) center/cover no-repeat;
+}
+
+.containerfluid .projectgridcontainer .projectgridcontent .three {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/three.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/three.jpg) center/cover no-repeat;
+}
+
+.containerfluid .projectgridcontainer .projectgridcontent .four {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/four.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/four.jpg) center/cover no-repeat;
+}
+
+.containerfluid .projectgridcontainer .projectgridcontent .five {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/five.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/five.jpg) center/cover no-repeat;
+}
+
+.containerfluid .projectgridcontainer .projectgridcontent .six {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/six.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/six.jpg) center/cover no-repeat;
+}
+
+.containerfluid .projectgridcontainer .projectgridcontent .seven {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/seven.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/seven.jpg) center/cover no-repeat;
+}
+
+.containerfluid .projectgridcontainer .projectgridcontent .eight {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/eight.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/eight.jpg) center/cover no-repeat;
+}
+
+.containerfluid .projectgridcontainer .projectgridcontent .nine {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/nine.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/nine.jpg) center/cover no-repeat;
+}
+
+.containerfluid .projectgridcontainer .projectgridcontent .ten {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/ten.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/ten.jpg) center/cover no-repeat;
+}
+
+@media (min-width: 768px) {
+  #resize {
+    visibility: hidden;
+  }
+  .bottom-bar .row {
+    visibility: visible !important;
+  }
+  .projectgridcontent {
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: (1fr)[4] !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+    -ms-grid-rows: (400px)[4] !important;
+        grid-template-rows: repeat(4, 400px) !important;
+    color: white;
+  }
+  .projectgridcontent .one {
+    -ms-grid-column: 1 !important;
+    -ms-grid-column-span: 1 !important;
+    grid-column: 1/2 !important;
+    -ms-grid-row: 1 !important;
+    -ms-grid-row-span: 1 !important;
+    grid-row: 1/2 !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/one.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/one.jpg) center/cover no-repeat;
+  }
+  .projectgridcontent .two {
+    -ms-grid-column: 2 !important;
+    -ms-grid-column-span: 1 !important;
+    grid-column: 2/3 !important;
+    -ms-grid-row: 1 !important;
+    -ms-grid-row-span: 1 !important;
+    grid-row: 1/2 !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/two.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/two.jpg) center/cover no-repeat;
+  }
+  .projectgridcontent .three {
+    -ms-grid-column: 3 !important;
+    -ms-grid-column-span: 2 !important;
+    grid-column: 3/5 !important;
+    -ms-grid-row: 1 !important;
+    -ms-grid-row-span: 2 !important;
+    grid-row: 1/3 !important;
+    height: 800px !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/three.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/three.jpg) center/cover no-repeat;
+  }
+  .projectgridcontent .four {
+    -ms-grid-column: 1 !important;
+    -ms-grid-column-span: 1 !important;
+    grid-column: 1/2 !important;
+    -ms-grid-row: 2 !important;
+    -ms-grid-row-span: 1 !important;
+    grid-row: 2/3 !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/four.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/four.jpg) center/cover no-repeat;
+  }
+  .projectgridcontent .five {
+    -ms-grid-column: 2 !important;
+    -ms-grid-column-span: 1 !important;
+    grid-column: 2/3 !important;
+    -ms-grid-row: 2 !important;
+    -ms-grid-row-span: 1 !important;
+    grid-row: 2/3 !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/five.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/five.jpg) center/cover no-repeat;
+  }
+  .projectgridcontent .six {
+    -ms-grid-column: 1 !important;
+    -ms-grid-column-span: 2 !important;
+    grid-column: 1/3 !important;
+    -ms-grid-row: 3 !important;
+    -ms-grid-row-span: 2 !important;
+    grid-row: 3/5 !important;
+    height: 800px !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/six.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/six.jpg) center/cover no-repeat;
+  }
+  .projectgridcontent .seven {
+    -ms-grid-column: 3 !important;
+    -ms-grid-column-span: 1 !important;
+    grid-column: 3/4 !important;
+    -ms-grid-row: 3 !important;
+    -ms-grid-row-span: 1 !important;
+    grid-row: 3/4 !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/seven.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/seven.jpg) center/cover no-repeat;
+  }
+  .projectgridcontent .eight {
+    -ms-grid-column: 4 !important;
+    -ms-grid-column-span: 1 !important;
+    grid-column: 4/5 !important;
+    -ms-grid-row: 3 !important;
+    -ms-grid-row-span: 1 !important;
+    grid-row: 3/4 !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/eight.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/eight.jpg) center/cover no-repeat;
+  }
+  .projectgridcontent .nine {
+    -ms-grid-column: 3 !important;
+    -ms-grid-column-span: 1 !important;
+    grid-column: 3/4 !important;
+    -ms-grid-row: 4 !important;
+    -ms-grid-row-span: 1 !important;
+    grid-row: 4/5 !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/nine.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/nine.jpg) center/cover no-repeat;
+  }
+  .projectgridcontent .ten {
+    -ms-grid-column: 4 !important;
+    -ms-grid-column-span: 1 !important;
+    grid-column: 4/5 !important;
+    -ms-grid-row: 4 !important;
+    -ms-grid-row-span: 1 !important;
+    grid-row: 4/5 !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/ten.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/ten.jpg) center/cover no-repeat;
+  }
+}
+
+@media (max-width: 768px) {
+  #toggle {
+    visibility: visible !important;
+    opacity: 1 !important;
+    margin-top: 6px;
+  }
+  .nav .brand {
+    margin-left: 18px;
+  }
+  .menu a {
+    font-weight: 200;
+    font-size: 20px;
+  }
+  .nav .menu {
+    display: none !important;
+  }
+  .container .row {
+    display: none;
+  }
+  .brand {
+    width: 100% !important;
+  }
+  .projectgridtitle {
+    text-align: center;
+    margin-left: 0rem !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .projectgridcontent {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(200px, 1fr))[2];
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+  .projectgridcontent .one {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .projectgridcontent .two {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .projectgridcontent .three {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  .projectgridcontent .four {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  .projectgridcontent .five {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+  }
+  .projectgridcontent .six {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+  }
+  .projectgridcontent .seven {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+  }
+  .projectgridcontent .eight {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+  }
+  .projectgridcontent .nine {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5/6;
+    height: 400px;
+  }
+  .projectgridcontent .ten {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5/6;
+  }
+}
+/*# sourceMappingURL=main.css.map */
