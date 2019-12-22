@@ -244,7 +244,7 @@ html, body {
 }
 
 .containerfluid #resize li:nth-child(1) {
-  margin-top: 12px;
+  margin-top: 20px;
 }
 
 .containerfluid #resize #menu {
@@ -473,140 +473,81 @@ html, body {
 }
 
 .containerfluid .footer {
-  width: 100%;
   background: black;
-  display: block;
-}
-
-.containerfluid .footer .inner-footer {
-  width: 95%;
-  margin: auto;
-  padding: 30px 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  color: white;
+  padding: 2rem;
 }
 
 .containerfluid .footer .footer-items {
-  width: 25%;
-  padding: 10px 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+.containerfluid .footer .footer-items h1 {
+  color: grey;
+  font-size: 2rem;
 }
 
 .containerfluid .footer .footer-items p {
-  color: grey;
-  font-size: 16px;
-  text-align: justify;
-  line-height: 25px;
+  font-weight: lighter;
 }
 
 .containerfluid .footer .footer-items h2 {
-  margin: 10px 0;
   color: grey;
-  font-size: 16px;
-  font-weight: lighter;
-  text-transform: uppercase;
+  font-size: 1.5rem;
 }
 
-.containerfluid .footer .footer-items .border {
-  height: 2px;
-  width: 40px;
-  background: #34495e;
-}
-
-.containerfluid .footer .footer-items .border .social-medi {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  color: #fff;
-  text-align: center;
-}
-
-.containerfluid .footer .footer-items .border .social-medi a {
-  text-decoration: none;
-  padding: 10px;
-}
-
-.containerfluid .footer .footer-items .border .social-medi a i {
-  height: 15px;
-  width: 15px;
-  margin: 20px 5px;
-  padding: 1rem;
-  color: #fff;
-  border-radius: 50%;
-  border: 1px solid grey;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.containerfluid .footer .footer-items .border ul li {
-  margin: 10px 0;
-  height: 25px;
-}
-
-.containerfluid .footer .footer-items .border ul li i {
-  margin-right: 20px;
-}
-
-.containerfluid .footer .footer-items .border ul {
+.containerfluid .footer .footer-items .borders ul {
   list-style: none;
-  color: #fff;
-  font-size: 15px;
-  letter-spacing: 0.5px;
-  margin-left: -2.5rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  line-height: 15px;
+  margin-left: -1.5rem;
+  margin-top: .5rem;
 }
 
-.containerfluid .footer .footer-items .border ul a {
+.containerfluid .footer .footer-items .borders ul a {
+  color: white;
+  font-weight: lighter;
   text-decoration: none;
-  outline: none;
-  color: #fff;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  width: 100%;
 }
 
-.containerfluid .footer .footer-items .border ul a:hover {
-  color: #34495e;
+.containerfluid .footer .footer-items .borders ul a:hover {
+  color: grey;
 }
 
-.containerfluid .footer h1 {
-  padding: 10px 0;
-  font-size: 25px;
-  color: #fff;
-  text-transform: uppercase;
+.containerfluid .footer .footer-items .borders li i {
+  letter-spacing: .1rem;
+}
+
+.containerfluid .footer .footer-items .borders .social-medi {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.containerfluid .footer .footer-items .borders .social-medi i {
+  border: 1px solid grey;
+  border-radius: 50%;
+  padding: .5rem;
+}
+
+.containerfluid .footer .footer-items .borders .social-medi i:hover {
+  background: grey;
 }
 
 .containerfluid .footer-bottom {
-  padding: 10px;
+  width: 100%;
+  color: white !important;
   background: black;
-  color: #fff;
-  font-size: 12px;
+  padding-left: 1rem;
+  padding-bottom: .5rem;
+  font-size: .8rem;
 }
 
 @media (min-width: 768px) {
-  #resize {
+  .containerfluid #resize {
     visibility: hidden;
   }
-  .bottom-bar .row {
+  .containerfluid .bottom-bar .row {
     visibility: visible !important;
   }
-  .projectgridcontent {
+  .containerfluid .projectgridcontent {
     display: -ms-grid !important;
     display: grid !important;
     -ms-grid-columns: (1fr)[4] !important;
@@ -615,7 +556,7 @@ html, body {
         grid-template-rows: repeat(4, 400px) !important;
     color: white;
   }
-  .projectgridcontent .one {
+  .containerfluid .projectgridcontent .one {
     -ms-grid-column: 1 !important;
     -ms-grid-column-span: 1 !important;
     grid-column: 1/2 !important;
@@ -625,7 +566,7 @@ html, body {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/one.jpg) center/cover no-repeat;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/one.jpg) center/cover no-repeat;
   }
-  .projectgridcontent .two {
+  .containerfluid .projectgridcontent .two {
     -ms-grid-column: 2 !important;
     -ms-grid-column-span: 1 !important;
     grid-column: 2/3 !important;
@@ -635,7 +576,7 @@ html, body {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/two.jpg) center/cover no-repeat;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/two.jpg) center/cover no-repeat;
   }
-  .projectgridcontent .three {
+  .containerfluid .projectgridcontent .three {
     -ms-grid-column: 3 !important;
     -ms-grid-column-span: 2 !important;
     grid-column: 3/5 !important;
@@ -646,7 +587,7 @@ html, body {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/three.jpg) center/cover no-repeat;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/three.jpg) center/cover no-repeat;
   }
-  .projectgridcontent .four {
+  .containerfluid .projectgridcontent .four {
     -ms-grid-column: 1 !important;
     -ms-grid-column-span: 1 !important;
     grid-column: 1/2 !important;
@@ -656,7 +597,7 @@ html, body {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/four.jpg) center/cover no-repeat;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/four.jpg) center/cover no-repeat;
   }
-  .projectgridcontent .five {
+  .containerfluid .projectgridcontent .five {
     -ms-grid-column: 2 !important;
     -ms-grid-column-span: 1 !important;
     grid-column: 2/3 !important;
@@ -666,7 +607,7 @@ html, body {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/five.jpg) center/cover no-repeat;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/five.jpg) center/cover no-repeat;
   }
-  .projectgridcontent .six {
+  .containerfluid .projectgridcontent .six {
     -ms-grid-column: 1 !important;
     -ms-grid-column-span: 2 !important;
     grid-column: 1/3 !important;
@@ -677,7 +618,7 @@ html, body {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/six.jpg) center/cover no-repeat;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/six.jpg) center/cover no-repeat;
   }
-  .projectgridcontent .seven {
+  .containerfluid .projectgridcontent .seven {
     -ms-grid-column: 3 !important;
     -ms-grid-column-span: 1 !important;
     grid-column: 3/4 !important;
@@ -687,7 +628,7 @@ html, body {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/seven.jpg) center/cover no-repeat;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/seven.jpg) center/cover no-repeat;
   }
-  .projectgridcontent .eight {
+  .containerfluid .projectgridcontent .eight {
     -ms-grid-column: 4 !important;
     -ms-grid-column-span: 1 !important;
     grid-column: 4/5 !important;
@@ -697,7 +638,7 @@ html, body {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/eight.jpg) center/cover no-repeat;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/eight.jpg) center/cover no-repeat;
   }
-  .projectgridcontent .nine {
+  .containerfluid .projectgridcontent .nine {
     -ms-grid-column: 3 !important;
     -ms-grid-column-span: 1 !important;
     grid-column: 3/4 !important;
@@ -707,7 +648,7 @@ html, body {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/images/nine.jpg) center/cover no-repeat;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/nine.jpg) center/cover no-repeat;
   }
-  .projectgridcontent .ten {
+  .containerfluid .projectgridcontent .ten {
     -ms-grid-column: 4 !important;
     -ms-grid-column-span: 1 !important;
     grid-column: 4/5 !important;
@@ -720,41 +661,41 @@ html, body {
 }
 
 @media (max-width: 768px) {
-  #toggle {
+  .containerfluid #toggle {
     visibility: visible !important;
     opacity: 1 !important;
     margin-top: 6px;
   }
-  .nav .brand {
+  .containerfluid .nav .brand {
     margin-left: 18px;
   }
-  .menu a {
+  .containerfluid .menu a {
     font-weight: 200;
     font-size: 20px;
   }
-  .nav .menu {
+  .containerfluid .nav .menu {
     display: none !important;
   }
-  .container .row {
+  .containerfluid .container .row {
     display: none;
   }
-  .brand {
+  .containerfluid .brand {
     width: 100% !important;
   }
-  .projectgridtitle {
+  .containerfluid .projectgridtitle {
     text-align: center;
     margin-left: 0rem !important;
   }
 }
 
 @media (min-width: 576px) {
-  .projectgridcontent {
+  .containerfluid .projectgridcontent {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(200px, 1fr))[2];
         grid-template-columns: repeat(2, minmax(200px, 1fr));
   }
-  .projectgridcontent .one {
+  .containerfluid .projectgridcontent .one {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
@@ -762,7 +703,7 @@ html, body {
     -ms-grid-row-span: 1;
     grid-row: 1/2;
   }
-  .projectgridcontent .two {
+  .containerfluid .projectgridcontent .two {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
@@ -770,7 +711,7 @@ html, body {
     -ms-grid-row-span: 1;
     grid-row: 1/2;
   }
-  .projectgridcontent .three {
+  .containerfluid .projectgridcontent .three {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
@@ -778,7 +719,7 @@ html, body {
     -ms-grid-row-span: 1;
     grid-row: 2/3;
   }
-  .projectgridcontent .four {
+  .containerfluid .projectgridcontent .four {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
@@ -786,7 +727,7 @@ html, body {
     -ms-grid-row-span: 1;
     grid-row: 2/3;
   }
-  .projectgridcontent .five {
+  .containerfluid .projectgridcontent .five {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
@@ -794,7 +735,7 @@ html, body {
     -ms-grid-row-span: 1;
     grid-row: 3/4;
   }
-  .projectgridcontent .six {
+  .containerfluid .projectgridcontent .six {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
@@ -802,7 +743,7 @@ html, body {
     -ms-grid-row-span: 1;
     grid-row: 3/4;
   }
-  .projectgridcontent .seven {
+  .containerfluid .projectgridcontent .seven {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
@@ -810,7 +751,7 @@ html, body {
     -ms-grid-row-span: 1;
     grid-row: 4/5;
   }
-  .projectgridcontent .eight {
+  .containerfluid .projectgridcontent .eight {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
@@ -818,7 +759,7 @@ html, body {
     -ms-grid-row-span: 1;
     grid-row: 4/5;
   }
-  .projectgridcontent .nine {
+  .containerfluid .projectgridcontent .nine {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
@@ -827,7 +768,7 @@ html, body {
     grid-row: 5/6;
     height: 400px;
   }
-  .projectgridcontent .ten {
+  .containerfluid .projectgridcontent .ten {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
@@ -837,15 +778,33 @@ html, body {
   }
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (min-width: 600px) {
+  .inner-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
   .footer-items {
     width: 50% !important;
+    border: 1px solid transparent;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 1000px) {
+  .inner-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .footer-items {
     width: 100% !important;
+    border: 1px solid transparent;
+    width: 25% !important;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -258,7 +258,7 @@ html, body{
             display: table;
 
             li:nth-child(1){
-                margin-top: 12px;
+                margin-top: 20px;
             }
 
             #menu {
@@ -503,7 +503,79 @@ html, body{
     // end contact
 
     // start footer
+        .footer {
+            background: black;
+            color: white;
+            padding: 2rem;
+
+            .footer-items {
+                margin-bottom: 1rem;
+                h1 {
+                    color: grey;
+                    font-size: 2rem;
+                }
+                p {
+                    font-weight: lighter;
+                }
+
+                h2 {
+                    color: grey;
+                    font-size: 1.5rem;
+                }
+
+                .borders {
+                    
+                    ul {
+                        list-style: none;
+                        margin-left:-1.5rem;
+                        margin-top: .5rem;
+
+                        a{
+                            color: white;
+                            font-weight: lighter;
+                            text-decoration: none;
+                        }
+
+                        a:hover {
+                            color: grey;
+                        }
+                    }
+
+                    li {
+                        i {
+                            letter-spacing: .1rem;                            
+                        }
+                    }
+
+                    .social-medi {
+                        margin-left: 1rem;
+                        margin-bottom: 1rem;;
+                        i {
+                            border: 1px solid grey;
+                            border-radius: 50%;
+                            padding: .5rem;
+                        }
+
+                        i:hover {
+                            background: grey;
+                        }
+                    }
+                }
+            }
+        }
     // end footer
+
+    // start footerbottom
+    .footer-bottom {
+        width: 100%;
+        // bottom: 0;
+        color: white !important;
+        background: black;
+        padding-left: 1rem;
+        padding-bottom: .5rem;
+        font-size: .8rem;
+    }
+    // end footerbottom
 
 @media(min-width:768px) {
     #resize {
@@ -712,15 +784,35 @@ html, body{
 
 }
 
-@media screen and (max-width: 1085px) {
-    .footer-items {
-        width: 50% !important;
-    }
 }
 
-@media screen and (max-width: 600px) {
-    .footer-items {
-        width: 100% !important;
+@media screen and (min-width:600px) {
+
+        .inner-footer {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .footer-items {
+            width: 50% !important;
+            border: 1px solid transparent;
+        }
     }
-}
+
+@media screen and (min-width:1000px) {
+
+        .inner-footer {
+            display: flex;
+            flex-wrap: wrap;
+            // width: 100%;
+        }
+
+        .footer-items {
+            width: 100% !important;
+            border: 1px solid transparent;
+            width: 25% !important;
+        }
+    }
+    
 
