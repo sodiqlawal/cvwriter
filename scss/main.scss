@@ -114,7 +114,7 @@ html, body{
 
         .header {
             position: absolute;
-            top: 38%;
+            top: 46%;
             left: 46%;
             transform: translate(-50%, -50%);
 
@@ -787,6 +787,12 @@ html, body{
 }
 
 @media screen and (min-width:600px) {
+
+    .header {
+        position: absolute;
+        top: 38% !important;
+        left: 46% ;
+    }
 
         .inner-footer {
             display: flex;
