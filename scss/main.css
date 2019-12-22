@@ -369,6 +369,8 @@ html, body {
 }
 
 .containerfluid #video-container video {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
   min-width: 100%;
   min-height: 100%;
   position: absolute;
@@ -468,6 +470,133 @@ html, body {
 
 .containerfluid .contact-section .contact-form-btn:hover {
   background: #2980b9;
+}
+
+.containerfluid .footer {
+  width: 100%;
+  background: black;
+  display: block;
+}
+
+.containerfluid .footer .inner-footer {
+  width: 95%;
+  margin: auto;
+  padding: 30px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.containerfluid .footer .footer-items {
+  width: 25%;
+  padding: 10px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.containerfluid .footer .footer-items p {
+  color: grey;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 25px;
+}
+
+.containerfluid .footer .footer-items h2 {
+  margin: 10px 0;
+  color: grey;
+  font-size: 16px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.containerfluid .footer .footer-items .border {
+  height: 2px;
+  width: 40px;
+  background: #34495e;
+}
+
+.containerfluid .footer .footer-items .border .social-medi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+.containerfluid .footer .footer-items .border .social-medi a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+.containerfluid .footer .footer-items .border .social-medi a i {
+  height: 15px;
+  width: 15px;
+  margin: 20px 5px;
+  padding: 1rem;
+  color: #fff;
+  border-radius: 50%;
+  border: 1px solid grey;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.containerfluid .footer .footer-items .border ul li {
+  margin: 10px 0;
+  height: 25px;
+}
+
+.containerfluid .footer .footer-items .border ul li i {
+  margin-right: 20px;
+}
+
+.containerfluid .footer .footer-items .border ul {
+  list-style: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  margin-left: -2.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  line-height: 15px;
+}
+
+.containerfluid .footer .footer-items .border ul a {
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.containerfluid .footer .footer-items .border ul a:hover {
+  color: #34495e;
+}
+
+.containerfluid .footer h1 {
+  padding: 10px 0;
+  font-size: 25px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.containerfluid .footer-bottom {
+  padding: 10px;
+  background: black;
+  color: #fff;
+  font-size: 12px;
 }
 
 @media (min-width: 768px) {
@@ -705,6 +834,18 @@ html, body {
     -ms-grid-row: 5;
     -ms-grid-row-span: 1;
     grid-row: 5/6;
+  }
+}
+
+@media screen and (max-width: 1085px) {
+  .footer-items {
+    width: 50% !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer-items {
+    width: 100% !important;
   }
 }
 /*# sourceMappingURL=main.css.map */

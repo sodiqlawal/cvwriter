@@ -398,6 +398,7 @@ html, body{
         position: relative;
 
         video {
+            filter: brightness(50%);
             min-width: 100%;
             min-height: 100%;
             position: absolute;
@@ -500,7 +501,9 @@ html, body{
     }
 
     // end contact
-}
+
+    // start footer
+    // end footer
 
 @media(min-width:768px) {
     #resize {
@@ -705,6 +708,19 @@ html, body{
             grid-column: 2/3;
             grid-row: 5/6;
         }
+    }
+
+}
+
+@media screen and (max-width: 1085px) {
+    .footer-items {
+        width: 50% !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer-items {
+        width: 100% !important;
     }
 }
 

@@ -129,7 +129,7 @@
 
         <!-- start video -->
         <div id="video-container">
-            <video preload="auto" autoplay="autoplay" type="video/mp4" src="/images/cole.mp4" loop controls muted></video>
+            <video preload="auto" autoplay="autoplay" type="video/mp4" src="/images/entre.mp4" loop controls muted></video>
             <div class="content">
                 <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore sequi impedit assumenda officiis, eum saepe quis perferendis earum ipsam consequatur.</p>
@@ -150,6 +150,61 @@
             </form>
         </div>
         <!-- end contact -->
+
+        <!-- start footer -->
+        <div class="footer">
+            <div class="inner-footer">
+                <div class="footer-items">
+                    <h1>Sayo CV Writing</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque totam autem omnis ullam. Aperiam, molestias adipisci! Rem, sunt voluptas? Minima.</p>
+                </div>
+                <!-- <div class="footer-items">
+                    <h2>Quick Links</h2>
+                    <div class="border">
+                        <ul>
+                            <a href=""><li>Home</li></a>
+                            <a href=""><li>About Us</li></a>
+                            <a href=""><li>Services</li></a>
+                            <a href=""><li>Blog</li></a>
+                            <a href=""><li>Contact US</li></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-items">
+                    <h2>Our Services</h2>
+                    <div class="border">
+                        <ul>
+                            <a href=""><li>lorem</li></a>
+                            <a href=""><li>lorem</li></a>
+                            <a href=""><li>lorem</li></a>
+                            <a href=""><li>lorem</li></a>
+                            <a href=""><li>lorem</li></a>
+                        </ul>
+                    </div>
+                </div>                 -->
+                <div class="footer-items">
+                <h2>Contact Us</h2>
+                <div class="border">
+                    <ul>
+                        <li><i class="fa fa-map-marker mr-2" aria-hidden="true">i, XYZ Street, WaitForIt. NIgeria</i></li>
+                        <li><i class="fa fa-phone mr-2" aria-hidden="true">+2348000000</i></li>
+                        <li><i class="fa fa-envelope mr-2" aria-hidden="true">sayo@cvwriting.com</i></li>
+                    </ul>
+                    <div class="social-medi">
+                        <a href="href"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="href"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="href"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="href"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- end footer -->
+        <!-- start footerbottom -->
+        <div class="footer-bottom">
+        </div>
+        <!-- end footerbottom -->
     </div>
 
 
@@ -242,6 +297,11 @@
         $("#resize").toggleClass("active")
     });
     // end navshow
+
+    // start footer
+    let date = new Date().getFullYear();
+    $(".footer-bottom").append(`Copyright &copy; Sayo CV Writing ${date}. All rights reserved.`);
+    // end footer
         
     </script>
 </body>
