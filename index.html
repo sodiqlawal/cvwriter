@@ -52,6 +52,7 @@
                         <li><a href="#" class="text-white">About</a></li>
                         <li><a href="#" class="text-white">Blog</a></li>
                         <li><a href="#" class="text-white">Contact</a></li>
+                        <li><a href="https://adoraikwuemesi.com/shop/" class="text-white">Shop</a></li>
                     </ul>
 
                     <div id="toggle">
@@ -66,6 +67,7 @@
                         <li><a href="#" class="text-white">About</a></li>
                         <li><a href="#" class="text-white">Blog</a></li>
                         <li><a href="#" class="text-white">Contact</a></li>
+                        <li><a href="https://adoraikwuemesi.com/shop/" class="text-white">Shop</a></li>
                     </ul>
                 </div>
                 <div class="social-media">
@@ -145,10 +147,10 @@
             <h1>Contact Us</h1>
             <div class="border"></div>
             <form action="index.html" method="post" class="contact-form">
-                <input type="text" class="contact-form-text" placeholder="Your name">
-                <input type="email" class="contact-form-text" placeholder="Your email">
-                <input type="phone" class="contact-form-text" placeholder="Your phone">
-                <textarea class="contact-form-text" placeholder="Your message"></textarea>
+                <input type="text" class="contact-form-text name" placeholder="Your name">
+                <input type="email" class="contact-form-text email" placeholder="Your email">
+                <input type="phone" class="contact-form-text phone" placeholder="Your phone">
+                <textarea class="contact-form-text textare" placeholder="Your message"></textarea>
                 <input type="submit" class="contact-form-btn" value="Send">
             </form>
         </div>
@@ -308,6 +310,10 @@
 
 
     // start whatsapp api
+    const name = document.querySelector(".name").value
+    const email = document.querySelector(".email").value
+    const phone = document.querySelector(".phone").value
+    const textarea = document.querySelector(".textarea").value
     
     // var request = require('request'); //bash: npm install request
     // // URL for request POST /message
