@@ -146,11 +146,26 @@
         <div class="contact-section">
             <h1>Contact Us</h1>
             <div class="border"></div>
-            <form action="index.html" method="post" class="contact-form">
+            <form class="contact-form">
+                <div class="name_div">
                 <input type="text" class="contact-form-text name" placeholder="Your name">
+                <div class="name_error"></div>
+                </div>
+
+                <div class="email_div">
                 <input type="email" class="contact-form-text email" placeholder="Your email">
+                <p class="email_error"></p>
+                </div>
+
+                <div class="phone_div">
                 <input type="phone" class="contact-form-text phone" placeholder="Your phone">
-                <textarea class="contact-form-text textare" placeholder="Your message"></textarea>
+                <div class="phone_error"></div>
+                </div>
+
+                <div class="text_div">
+                <textarea class="contact-form-text textarea" placeholder="Your message"></textarea>
+                <div class="text_error"></div>
+                </div>
                 <input type="submit" class="contact-form-btn" value="Send">
             </form>
         </div>
@@ -310,24 +325,65 @@
 
 
     // start whatsapp api
-    const name = document.querySelector(".name").value
-    const email = document.querySelector(".email").value
-    const phone = document.querySelector(".phone").value
-    const textarea = document.querySelector(".textarea").value
-    
-    // var request = require('request'); //bash: npm install request
-    // // URL for request POST /message
-    // var url = 'https://eu1.chat-api.com/instance87955/message?token=dpr4o42uy2eg011g';
-    // var data = {
-    //     phone: '15034365851', // Receivers phone
-    //     body: 'Hello, world!', // Message
-    // };
-    // // Send a request
-    // request({
-    //     url: url,
-    //     method: "POST",
-    //     json: data
-    // });
+    const contactform = document.querySelector(".contact-form")
+
+
+    contactform.addEventListener("submit", (e)=> {
+        e.preventDefault();
+
+        const name = document.querySelector(".contact-form-text.name").value;
+        const email = document.querySelector(".contact-form-text.email").value;
+        const phone = document.querySelector(".contact-form-text.phone").value;
+        const text = document.querySelector(".contact-form-text.textarea").value;
+        const name_error = document.querySelector(".name_error");
+        const phone_error = document.querySelector(".phone_error");
+        const email_error = document.querySelector(".email_error");
+        const text_error = document.querySelector(".text_error");
+
+        const body = name + "%0a" + email + "%0a" + phone + "%0a" + text;
+        const link = `https://api.whatsapp.com/send?phone=+2348132145325&text=${body}`
+
+        if( name =="" || email =="" || phone =="" || text ==""){
+        document.querySelector(".contact-section").style.height="800px";
+        }
+
+        if (name == "")                                  
+            { 
+                document.querySelector('.name').style.border = "1px solid red";
+                document.querySelector('.name_div').style.color = "red";
+                name_error.textContent = "Please enter your name";
+                name.focus();
+                return false;
+            } 
+       
+        if (email == "")                                   
+            { 
+                document.querySelector('.email').style.border = "1px solid red";
+                document.querySelector('.email_div').style.color = "red";
+                email_error.textContent = "Email is required";
+                email.focus();
+                return false;
+            } 
+        
+        if (phone == "")                           
+            { 
+                document.querySelector('.phone').style.border = "1px solid red";
+                document.querySelector('.phone_div').style.color = "red";
+                phone_error.textContent = "Phone number is required";
+                phone.focus();
+                return false;
+            } 
+
+        if (text == "")                           
+            { 
+                document.querySelector('.textarea').style.border = "1px solid red";
+                document.querySelector('.text_div').style.color = "red";
+                text_error.textContent = "How may we help you?";
+                text.focus();
+                return false;
+            } 
+            return $(`<a href="${link}" target="blank"></a>`)[0].click();
+        })
 
     // end whatsapp api
         
