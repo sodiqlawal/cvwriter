@@ -502,6 +502,33 @@ html, body{
 
     // end contact
 
+
+    // start testimonial
+
+    .testimonial-container {
+        background: rgba(0,0,0,0.9);
+
+        h1 {
+            text-align: center;
+            color: #ddd;           
+        }
+    }
+
+    .swiper-container {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+        background: #fff;
+    }
+    // end testimonial
+
     // start footer
         .footer {
             // background: black;

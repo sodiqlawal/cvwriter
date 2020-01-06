@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CvWriting</title>
     <link rel="stylesheet" type="text/css" href="scss/main.css">
@@ -24,6 +24,9 @@
 
     <!-- greensock -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/gsap.min.js"></script>
+
+    <!-- swiper -->
+    <link rel="stylesheet" type="text/css" href="swiper.min.css">
 
 </head>
 <body>
@@ -171,6 +174,28 @@
         </div>
         <!-- end contact -->
 
+        <!-- start testimonials -->
+
+        <div class="testimonial-container">
+            <h1>Testimonials</h1>
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                </div>
+
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+        <!-- end testimonials -->
+
         <!-- start footer -->
         <div class="footer">
             <div class="inner-footer">
@@ -229,7 +254,7 @@
 
 
 
-
+    <script type="text/javascript" src="swiper.min.js"></script>
     <script type="text/javascript">
 
         // start banner
@@ -386,6 +411,27 @@
         })
 
     // end whatsapp api
+
+
+    // start swiper
+
+    var swiper = new Swiper(".swiper-container", {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 500,
+            modifier: 1,
+            slideShadows: true,
+        },
+        pagination: {
+            el: '.swiper-pagination'
+        },
+    });
+    // end swiper
         
     </script>
 </body>
