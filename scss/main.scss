@@ -913,7 +913,7 @@ html, body{
         font-size: 15px;
         line-height: 24px;
         letter-spacing: 1px;
-        background: #fff !important;
+        // background: #fff !important;
 
         h1 {
             text-align: center;
@@ -1091,6 +1091,10 @@ html, body{
             width: 100% !important;
             // display: block !important;
 
+            .row.new {
+                display: block !important;
+            }
+
             .column {
                 width: 100% !important;
                 display: block !important;
@@ -1098,6 +1102,23 @@ html, body{
             }
         }
     }
+
+   .learncontain {
+
+    .container {
+        margin: 20px auto 0;
+    }
+   
+   h1 {
+        text-align: center;
+        margin-top: 120px;
+        animation-delay: .2s;
+        // font-size: 10px;
+        font-size: 1.5rem;
+        color: #000;
+    }
+
+}
 
 
     .scroll {
