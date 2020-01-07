@@ -991,6 +991,8 @@ html, body {
   background: orangered;
   padding: 5px;
   border-radius: 10px;
+  -webkit-box-shadow: 2px 3px 5px #fff;
+          box-shadow: 2px 3px 5px #fff;
 }
 
 .row:nth-child(1) .column:nth-child(2) {
@@ -1008,6 +1010,8 @@ html, body {
   background: orangered;
   padding: 5px;
   border-radius: 10px;
+  -webkit-box-shadow: 2px 3px 5px #fff;
+          box-shadow: 2px 3px 5px #fff;
 }
 
 .row:nth-child(1) .column:nth-child(3) {
@@ -1025,6 +1029,8 @@ html, body {
   background: orangered;
   padding: 5px;
   border-radius: 10px;
+  -webkit-box-shadow: 2px 3px 5px #fff;
+          box-shadow: 2px 3px 5px #fff;
 }
 
 .row:nth-child(2) .column:nth-child(1) {
@@ -1042,6 +1048,8 @@ html, body {
   background: orangered;
   padding: 5px;
   border-radius: 10px;
+  -webkit-box-shadow: 2px 3px 5px #fff;
+          box-shadow: 2px 3px 5px #fff;
 }
 
 .row:nth-child(2) .column:nth-child(2) {
@@ -1059,6 +1067,8 @@ html, body {
   background: orangered;
   padding: 5px;
   border-radius: 10px;
+  -webkit-box-shadow: 2px 3px 5px #fff;
+          box-shadow: 2px 3px 5px #fff;
 }
 
 .row:nth-child(2) .column:nth-child(3) {
@@ -1076,6 +1086,8 @@ html, body {
   background: orangered;
   padding: 5px;
   border-radius: 10px;
+  -webkit-box-shadow: 2px 3px 5px #fff;
+          box-shadow: 2px 3px 5px #fff;
 }
 
 @media screen and (max-width: 768px) {
