@@ -963,12 +963,14 @@ html, body{
             right: 0;
             transition: all 1s ease;
             cursor: pointer;
-        }
-        .plus:hover {
             position: absolute;
+            display: none;
+        }
+
+        .pluson {
+            display: block;
         }
         .plusin {
-            font-size: 6rem;
             position: absolute;
             top: 50%;
             transform: translate(-50%,-50%);
@@ -976,6 +978,10 @@ html, body{
             border-radius: 100%;
             padding: 5px;
             transition: all 1s ease;
+        }
+
+        .plusup {
+            font-size: 6rem;
         }
 
     .row:nth-child(1) .column:nth-child(1) {

@@ -952,14 +952,15 @@ html, body {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   cursor: pointer;
+  position: absolute;
+  display: none;
 }
 
-.plus:hover {
-  position: absolute;
+.pluson {
+  display: block;
 }
 
 .plusin {
-  font-size: 6rem;
   position: absolute;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -969,6 +970,10 @@ html, body {
   padding: 5px;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+}
+
+.plusup {
+  font-size: 6rem;
 }
 
 .row:nth-child(1) .column:nth-child(1) {

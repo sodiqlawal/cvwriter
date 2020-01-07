@@ -83,32 +83,32 @@
     <h1 class="animated fadeInDown">Courses and Trainings</h1>
     <div class="container">
         <div class="row">
-            <div class="column animated fadeInLeft">
+            <div class="column one animated fadeInLeft">
                 <div class="cover">
-                <div class="plus"><span class="plusin">&plus;</span></div>
+                <div class="plus one animated fadeIn"><span class="plusin one">&plus;</span></div>
                 </div>
                 <!-- <p class="coltext animated fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quam?</p> -->
             </div>
-            <div class="column animated fadeInLeft">
-                <div class="plus"><span class="plusin">&plus;</span></div>
+            <div class="column two animated fadeInLeft">
+                <div class="plus two animated fadeIn"><span class="plusin two">&plus;</span></div>
                 <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quam?</p> -->
             </div>
-            <div class="column animated fadeInLeft">
-                <div class="plus"><span class="plusin">&plus;</span></div>
+            <div class="column three animated fadeInLeft">
+                <div class="plus three animated fadeIn"><span class="plusin three">&plus;</span></div>
                 <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quam?</p> -->
             </div>
         </div>
         <div class="row">
-            <div class="column animated fadeInLeft">
-                <div class="plus"><span class="plusin">&plus;</span></div>
+            <div class="column four animated fadeInLeft">
+                <div class="plus four animated fadeIn"><span class="plusin four">&plus;</span></div>
                 <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quam?</p> -->
             </div>
-            <div class="column animated fadeInLeft">
-                <div class="plus"><span class="plusin">&plus;</span></div>
+            <div class="column five animated fadeInLeft">
+                <div class="plus five animated fadeIn"><span class="plusin five">&plus;</span></div>
                 <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quam?</p> -->
             </div>
-            <div class="column animated fadeInLeft">
-                <div class="plus"><span class="plusin">&plus;</span></div>
+            <div class="column six animated fadeInLeft">
+                <div class="plus six animated fadeIn"><span class="plusin six">&plus;</span></div>
                 <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quam?</p> -->
             </div>
         </div>
@@ -129,14 +129,88 @@
     // end navshow
 
     // scrolling effect
-    $(window).on("scroll", function(){
-        if($(window).scrollTop()) {
-            $(".nav").addClass("scroll");
-        }
-        else {
-            $(".nav").removeClass("scroll")
-        }
-    })
+    // $(window).on("scroll", function(){
+    //     if($(window).scrollTop()) {
+    //         $(".nav").addClass("scroll");
+    //     }
+    //     else {
+    //         $(".nav").removeClass("scroll")
+    //     }
+    // })
+
+
+// product hover
+    $(".column.one").mouseenter(
+  function(){
+    $('.plusin.one').addClass("plusup")
+    $('.plus.one').addClass("pluson")
+  });
+  $(".column.one").mouseleave(
+  function(){
+    $('.plusin.one').removeClass("plusup")
+    $('.plus.one').removeClass("pluson")
+  });
+
+
+  $(".column.two").mouseenter(
+  function(){
+    $('.plusin.two').addClass("plusup")
+    $('.plus.two').addClass("pluson")
+  });
+  $(".column.two").mouseleave(
+  function(){
+    $('.plusin.two').removeClass("plusup")
+    $('.plus.two').removeClass("pluson")
+  });
+
+
+  $(".column.three").mouseenter(
+  function(){
+    $('.plusin.three').addClass("plusup")
+    $('.plus.three').addClass("pluson")
+  });
+  $(".column.three").mouseleave(
+  function(){
+    $('.plusin.three').removeClass("plusup")
+    $('.plus.three').removeClass("pluson")
+  });
+
+
+  $(".column.four").mouseenter(
+  function(){
+    $('.plusin.four').addClass("plusup")
+    $('.plus.four').addClass("pluson")
+  });
+  $(".column.four").mouseleave(
+  function(){
+    $('.plusin.four').removeClass("plusup")
+    $('.plus.four').removeClass("pluson")
+  });
+
+
+  $(".column.five").mouseenter(
+  function(){
+    $('.plusin.five').addClass("plusup")
+    $('.plus.five').addClass("pluson")
+  });
+  $(".column.five").mouseleave(
+  function(){
+    $('.plusin.five').removeClass("plusup")
+    $('.plus.five').removeClass("pluson")
+  });
+
+
+  $(".column.six").mouseenter(
+  function(){
+    $('.plusin.six').addClass("plusup")
+    $('.plus.six').addClass("pluson")
+  });
+  $(".column.six").mouseleave(
+  function(){
+    $('.plusin.six').removeClass("plusup")
+    $('.plus.six').removeClass("pluson")
+  });
+
 
 
  </script>
