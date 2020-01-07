@@ -936,12 +936,15 @@ html, body {
   border: 2rem solid white;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+  position: relative;
+  z-index: 10;
 }
 
 .plus {
   color: #fff;
   background: rgba(0, 0, 0, 0.7);
-  position: absolute;
+  position: relative;
+  z-index: 1;
   top: 0;
   left: 0;
   bottom: 0;
@@ -949,6 +952,10 @@ html, body {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   cursor: pointer;
+}
+
+.plus:hover {
+  position: absolute;
 }
 
 .plusin {
@@ -967,7 +974,7 @@ html, body {
 .row:nth-child(1) .column:nth-child(1) {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
-  background: url(/images/one.jpg) center/cover no-repeat;
+  background: url(/images/six.jpg) center/cover no-repeat;
 }
 
 .row:nth-child(1) .column:nth-child(1)::before {
@@ -984,7 +991,7 @@ html, body {
 .row:nth-child(1) .column:nth-child(2) {
   -webkit-animation-delay: 1.3s;
           animation-delay: 1.3s;
-  background: url(/images/two.jpg) center/cover no-repeat;
+  background: url(/images/five.jpg) center/cover no-repeat;
 }
 
 .row:nth-child(1) .column:nth-child(2)::before {
@@ -1001,7 +1008,7 @@ html, body {
 .row:nth-child(1) .column:nth-child(3) {
   -webkit-animation-delay: 1.6s;
           animation-delay: 1.6s;
-  background: url(/images/three.jpg) center/cover no-repeat;
+  background: url(/images/four.jpg) center/cover no-repeat;
 }
 
 .row:nth-child(1) .column:nth-child(3)::before {

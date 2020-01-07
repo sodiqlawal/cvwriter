@@ -946,6 +946,8 @@ html, body{
                 width: 300px;
                 border: 2rem solid white;
                 transition: all 1s ease;
+                position: relative;
+                z-index: 10;
             }
         }
     }
@@ -953,13 +955,17 @@ html, body{
         .plus {
             color: #fff;
             background: rgba(0,0,0,0.7);
-            position: absolute;
+            position: relative;
+            z-index: 1;
             top: 0;
             left: 0;
             bottom: 0;
             right: 0;
             transition: all 1s ease;
             cursor: pointer;
+        }
+        .plus:hover {
+            position: absolute;
         }
         .plusin {
             font-size: 6rem;
@@ -974,7 +980,7 @@ html, body{
 
     .row:nth-child(1) .column:nth-child(1) {
         animation-delay: 1s;
-        background: url(/images/one.jpg)center/cover no-repeat;
+        background: url(/images/six.jpg)center/cover no-repeat;
     }
 
 
@@ -991,7 +997,7 @@ html, body{
 
     .row:nth-child(1) .column:nth-child(2) {
         animation-delay: 1.3s;
-        background: url(/images/two.jpg)center/cover no-repeat;
+        background: url(/images/five.jpg)center/cover no-repeat;
     }
     .row:nth-child(1) .column:nth-child(2)::before {
         content: "Sale";
@@ -1006,7 +1012,7 @@ html, body{
 
     .row:nth-child(1) .column:nth-child(3) {
         animation-delay: 1.6s;
-        background: url(/images/three.jpg)center/cover no-repeat;
+        background: url(/images/four.jpg)center/cover no-repeat;
     }
     .row:nth-child(1) .column:nth-child(3)::before {
         content: "Sale";
