@@ -267,6 +267,11 @@ html, body {
 
 .containerfluid #resize #menu li a {
   color: #fff;
+  text-decoration: none;
+}
+
+.containerfluid #resize #menu li a:hover {
+  text-decoration: underline;
 }
 
 .containerfluid #resize.active {
@@ -834,5 +839,251 @@ html, body {
     border: 1px solid transparent;
     width: 25% !important;
   }
+}
+
+.codecontainer {
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+}
+
+.codecontainer .wrapper {
+  height: 100px;
+}
+
+.codecontainer .logo {
+  line-height: 40px;
+  float: left;
+  margin: 1.2em 0 0 2.2em;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.codecontainer .nav {
+  line-height: 40px;
+  margin: 1.2em;
+  position: absolute;
+  right: 0;
+}
+
+.codecontainer .nav ul li {
+  list-style: none;
+  display: inline-block;
+  color: #fff;
+  padding-right: 36px;
+}
+
+.codecontainer .nav ul li a {
+  text-decoration: none;
+}
+
+.codecontainer .social-media {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.codecontainer .social-media ul li {
+  list-style: none;
+  color: #000;
+  padding-top: 20px;
+}
+
+.learncontain {
+  padding-bottom: 3rem;
+  font-family: "Raleway";
+  font-weight: lighter;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  background: #fff !important;
+}
+
+.learncontain h1 {
+  text-align: center;
+  margin-top: 120px;
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+  font-size: 40px;
+  color: #000;
+}
+
+.learncontain .container {
+  width: 80%;
+  margin: 60px auto 0;
+  display: table;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.learncontain .container .row {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.learncontain .container .column {
+  background: #151519;
+  display: table-cell;
+  color: #fff;
+  padding: 30px;
+  width: 33.3%;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-transition: 1s;
+  transition: 1s;
+  height: 300px;
+  width: 300px;
+  border: 2rem solid white;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.plus {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+
+.plusin {
+  font-size: 6rem;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: grey;
+  border-radius: 100%;
+  padding: 5px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.row:nth-child(1) .column:nth-child(1) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  background: url(/images/one.jpg) center/cover no-repeat;
+}
+
+.row:nth-child(1) .column:nth-child(1)::before {
+  content: "Sale";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 1.5rem;
+  background: orangered;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.row:nth-child(1) .column:nth-child(2) {
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+  background: url(/images/two.jpg) center/cover no-repeat;
+}
+
+.row:nth-child(1) .column:nth-child(2)::before {
+  content: "Sale";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 1.5rem;
+  background: orangered;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.row:nth-child(1) .column:nth-child(3) {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+  background: url(/images/three.jpg) center/cover no-repeat;
+}
+
+.row:nth-child(1) .column:nth-child(3)::before {
+  content: "Sale";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 1.5rem;
+  background: orangered;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.row:nth-child(2) .column:nth-child(1) {
+  -webkit-animation-delay: 1.9s;
+          animation-delay: 1.9s;
+  background: url(/images/four.jpg) center/cover no-repeat;
+}
+
+.row:nth-child(2) .column:nth-child(1)::before {
+  content: "Sale";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 1.5rem;
+  background: orangered;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.row:nth-child(2) .column:nth-child(2) {
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+  background: url(/images/five.jpg) center/cover no-repeat;
+}
+
+.row:nth-child(2) .column:nth-child(2)::before {
+  content: "Sale";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 1.5rem;
+  background: orangered;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.row:nth-child(2) .column:nth-child(3) {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  background: url(/images/six.jpg) center/cover no-repeat;
+}
+
+.row:nth-child(2) .column:nth-child(3)::before {
+  content: "Sale";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 1.5rem;
+  background: orangered;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0;
+    padding: 10px 0;
+    width: 100% !important;
+  }
+  .container .column {
+    width: 100% !important;
+    display: block !important;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+.scroll {
+  position: fixed;
+  background: black;
+  top: 0;
+  z-index: 10000;
 }
 /*# sourceMappingURL=main.css.map */
