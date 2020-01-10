@@ -232,6 +232,7 @@ html, body {
 .containerfluid #resize {
   z-index: 1;
   top: 0px;
+  bottom: 0;
   position: absolute;
   background: #000;
   width: 100%;
@@ -1124,5 +1125,12 @@ html, body {
   background: black;
   top: 0;
   z-index: 10000;
+}
+
+.codecontainer #resize {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
 }
 /*# sourceMappingURL=main.css.map */
