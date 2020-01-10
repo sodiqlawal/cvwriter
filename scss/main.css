@@ -1132,5 +1132,10 @@ html, body {
   top: 0;
   bottom: 0;
   z-index: 100;
+  padding-top: 5rem;
+}
+
+.codecontainer #toggle {
+  position: fixed;
 }
 /*# sourceMappingURL=main.css.map */
