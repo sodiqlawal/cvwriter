@@ -1137,5 +1137,9 @@ html, body {
 
 .codecontainer #toggle {
   position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  right: 0;
+  padding: .5rem;
+  margin-top: -.5rem;
 }
 /*# sourceMappingURL=main.css.map */
